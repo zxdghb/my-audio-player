@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的音频播放器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .audio-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 15px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-container">
+        <h1>我的专属音频</h1>
+        <p>点击播放按钮收听我的音频内容。</p>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1zJu141VLfqN1Pj6QZDwfI-XFs7gVseBZ/view?usp=sharing" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p style="margin-top: 20px;">如果播放失败，请检查链接或浏览器兼容性。</p>
+    </div>
+</body>
+</html>
